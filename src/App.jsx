@@ -16,7 +16,7 @@ function App() {
       <div className="flex-1 flex flex-col">
         <Header isOpen = {() => setIsSideBarOpen(true)}/>
         <main className="p-4 md:p-6">
-          <h1 className="text-2xl font-bold mb-4">Product Dashboard</h1>
+          <h1 className="text-2xl font-bold mb-4 md:ml-56 ml-16 md:mt-16">Product Dashboard</h1>
           <div className=" space-y-4">
             <ProductTable />
           </div>

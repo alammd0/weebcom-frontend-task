@@ -10,11 +10,11 @@ export default function SideBar({ isOpen, onClose }) {
         }`}
         onClick={onClose}
       />
-      <div>
+      <div className="fixed z-50">
         <aside
           className={`pt-6 flex flex-col gap-5 pl-3 w-56 bg-white border-r 
-                    h-screen fixed inset-y-0 left-0 z-50 transform transition-transform 
-                    md:static md:translate-x-0 ${
+                     fixed inset-y-0 left-0 z-50 transform transition-transform 
+                    md:static md:translate-x-0 min-h-screen ${
                       isOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
         >
@@ -40,13 +40,13 @@ export default function SideBar({ isOpen, onClose }) {
 
           <nav>
             <ul className="flex flex-col gap-4">
-              <li className="text-sm md:text-[16px] md:font-bold text-slate-700">
+              <li className="text-sm md:text-[16px] md:font-bold text-slate-700 cursor-pointer hover:bg-slate-400 px-4 py-3 mr-2 rounded hover:text-slate-100 transition-all duration-75">
                 Dashboard
               </li>
-              <li className="text-sm md:text-[16px] md:font-bold text-slate-700">
+              <li className="text-sm md:text-[16px] md:font-bold text-slate-700 cursor-pointer hover:bg-slate-400 px-4 py-3 mr-2 rounded hover:text-slate-100 transition-all duration-75">
                 Products
               </li>
-              <li className="text-sm md:text-[16px] md:font-bold text-slate-700">
+              <li className="text-sm md:text-[16px] md:font-bold text-slate-700 cursor-pointer hover:bg-slate-400 px-4 py-3 mr-2 rounded hover:text-slate-100 transition-all duration-75">
                 Settings
               </li>
             </ul>

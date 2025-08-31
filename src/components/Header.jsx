@@ -1,7 +1,7 @@
 
 export default function Header({ isOpen }){
     return (
-       <header className="bg-white border-b px-4 py-6 items-center justify-between">
+       <header className="bg-white border-b px-4 py-6 items-center justify-between md:ml-56 ml-0 fixed w-full z-50">
             <div className="flex items-center gap-4">
                 <button onClick={isOpen} className="md:hidden p-2 bg-slate-100 rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
